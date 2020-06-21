@@ -1,0 +1,23 @@
+<html>
+
+<head> 
+    <title>Redirecting...</title>
+    <link rel="icon" href="https://common.ets2mcg.com/img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#f7d331">
+    <meta property="og:site_name" content="ETS2MCG Calendar" />
+    <meta property="og:title" content="ETS2MCG Planning" />
+    <meta property="og:description" content="If you connect here, you'll be redirected into google calendar form page." />
+    <meta property="og:image" content="https://common.ets2mcg.com/img/ETS2MCG.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.7/jstz.min.js"></script>
+</head>
+
+<body>
+    <script>
+        let timezone = jstz.determine();
+        let calendar = "https://calendar.google.com/calendar/embed?src=mj22grpfup8l1d8f8b7fcqqiio@group.calendar.google.com&showPrint=0&showCalendars=0&color=%23F6BF26&ctz=";
+        let redirect = calendar + timezone.name();
+        window.location.replace(redirect);
+    </script>
+</body>
+
+</html>
